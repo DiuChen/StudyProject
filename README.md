@@ -9,3 +9,5 @@
 [OkHttp github地址](https://github.com/square/okhttp)
 #### 参考资料
 [Okhttp3基本使用](https://www.jianshu.com/p/da4a806e599b)
+#### 笔记
+在使用okhttp下载文件时 如果要通过Callback#onResponse()回调方法的IO操作获取进度 不能设置拦截器

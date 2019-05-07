@@ -8,32 +8,38 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/startServer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="异步GET请求" />
+        android:text="startServer()"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn2"
+        android:id="@+id/stopService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="同步GET请求" />
+        android:text="stopService()"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn3"
+        android:id="@+id/bindService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="POST方式提交String" />
+        android:text="bindService()"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn4"
+        android:id="@+id/unbindService"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="POST提交文件" />
+        android:text="unbindService()"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/btn5"
+        android:id="@+id/stopSelf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="下载文件" />
+        android:text="stopSelf()"
+        android:textAllCaps="false" />
+
 </LinearLayout>
