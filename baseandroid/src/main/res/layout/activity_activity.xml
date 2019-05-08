@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fourconstitute.activity.ActivityActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activity的启动模式" />
+
+    <Button
+        android:id="@+id/activitySkipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activity跳转执行的生命周期"
+        android:textAllCaps="false" />
+</LinearLayout>

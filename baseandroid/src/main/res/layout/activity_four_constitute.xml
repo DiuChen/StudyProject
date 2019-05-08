@@ -5,29 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".fourconstitute.FourConstituteActivity">
 
     <Button
-        android:id="@+id/fourConstituteBtn"
+        android:id="@+id/activityBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="四大组件" />
+        android:text="Activity"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/layoutBtn"
+        android:id="@+id/broadcastBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="布局使用" />
+        android:text="Broadcast"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/multithreadingBtn"
+        android:id="@+id/contentProviderBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="多线程" />
+        android:text="ContentProvider"
+        android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/animationBtn"
+        android:id="@+id/serviceBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="四大组件" />
+        android:text="Service"
+        android:textAllCaps="false" />
+
 </LinearLayout>
