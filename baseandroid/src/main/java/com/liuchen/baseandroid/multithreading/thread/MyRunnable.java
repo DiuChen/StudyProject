@@ -12,15 +12,18 @@ public class MyRunnable implements Runnable {
 
     @Override
     public void run() {
-        while (num > 0) {
-            synchronized (this){
-                num--;
+        Log.d(TAG, "run: 启动线程:" + Thread.currentThread().getName());
+
+        while (true) {
+            synchronized (this) {
                 Log.d(TAG, "run: " + Thread.currentThread().getName() + " " + num);
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                num--;
+                if (num <= 0) break;
+            }
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }

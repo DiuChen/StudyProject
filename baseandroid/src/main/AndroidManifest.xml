@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".multithreading.thread.ThreadActivity"></activity>
+        <activity android:name=".multithreading.handler.ThreadLocalActivity"></activity>
+        <activity android:name=".multithreading.thread.ThreadActivity" />
         <activity
             android:name=".multithreading.handler.HandlerActivity"
             android:label="Handler" />

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.liuchen.baseandroid.R;
+import com.liuchen.baseandroid.multithreading.handler.HandlerActivity;
 import com.liuchen.baseandroid.multithreading.thread.ThreadActivity;
 
 public class MultiThreadingActivity extends AppCompatActivity implements View.OnClickListener {
@@ -30,7 +31,7 @@ public class MultiThreadingActivity extends AppCompatActivity implements View.On
                 startActivity(new Intent(MultiThreadingActivity.this, ThreadActivity.class));
                 break;
             case R.id.handlerBtn:
-
+                startActivity(new Intent(MultiThreadingActivity.this, HandlerActivity.class));
                 break;
         }
     }
