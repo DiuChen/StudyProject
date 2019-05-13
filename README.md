@@ -4,6 +4,9 @@
 
 ## StatusBar
 安卓状态栏相关 包括状态栏显示隐藏 颜色
+[ImmersionBar](https://github.com/gyf-dev/ImmersionBar)
+#### 参考资料
+https://www.jianshu.com/p/2a884e211a62
 
 ## GreenDao
 可视化管理工具:SQLiteStudio
