@@ -1,1 +1,1 @@
-include ':app', ':greendao', ':okhttp', ':server', ':baseandroid'
+include ':app', ':greendao', ':okhttp', ':server', ':baseandroid', ':statusbar'
