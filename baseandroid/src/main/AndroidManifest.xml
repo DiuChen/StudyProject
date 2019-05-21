@@ -11,15 +11,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".multithreading.handler.ThreadLocalActivity"></activity>
-        <activity android:name=".multithreading.thread.ThreadActivity" />
+        <provider
+            android:name=".fourconstitute.contentprovider.MyContentProvider"
+            android:authorities="com.liuchen.baseandroid.fourconstitute.contentprovider.MyContentProvider" />
+
+        <activity
+            android:name=".fourconstitute.contentprovider.ContentProviderActivity"
+            android:label="ContentProvider" />
+        <activity
+            android:name=".multithreading.handler.ThreadLocalActivity"
+            android:label="ThreadLocal" />
+        <activity
+            android:name=".multithreading.thread.ThreadActivity"
+            android:label="Thread" />
         <activity
             android:name=".multithreading.handler.HandlerActivity"
             android:label="Handler" />
         <activity
             android:name=".multithreading.MultiThreadingActivity"
             android:label="MultiThreading" />
-        <activity android:name=".fourconstitute.activity.SkipActivity" />
+        <activity
+            android:name=".fourconstitute.activity.SkipActivity"
+            android:label="SkipActivity" />
         <activity
             android:name=".fourconstitute.activity.ActivityActivity"
             android:label="Activity" />

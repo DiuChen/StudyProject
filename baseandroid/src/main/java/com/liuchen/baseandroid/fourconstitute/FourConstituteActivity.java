@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.liuchen.baseandroid.fourconstitute.activity.ActivityActivity;
 import com.liuchen.baseandroid.R;
+import com.liuchen.baseandroid.fourconstitute.contentprovider.ContentProviderActivity;
 
 public class FourConstituteActivity extends AppCompatActivity implements View.OnClickListener {
     private Button activityBtn, broadcastBtn, contentProviderBtn, serviceBtn;
@@ -37,6 +38,7 @@ public class FourConstituteActivity extends AppCompatActivity implements View.On
             case R.id.broadcastBtn:
                 break;
             case R.id.contentProviderBtn:
+                startActivity(new Intent(FourConstituteActivity.this, ContentProviderActivity.class));
                 break;
             case R.id.serviceBtn:
                 break;
