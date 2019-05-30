@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.liuchen.baseandroid">
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".fourconstitute.service.ServiceActivity"
+            android:label="Service" />
+
         <provider
             android:name=".fourconstitute.contentprovider.MyContentProvider"
-            android:authorities="com.liuchen.baseandroid.fourconstitute.contentprovider.MyContentProvider" />
-
+            android:authorities="com.liuchen.baseandroid.fourconstitute.contentprovider.MyContentProvider"
+            android:exported="true" />
+        <!--
+设置此provider是否可以被其他进程使用
+        android:exported="true"
+        -->
         <activity
             android:name=".fourconstitute.contentprovider.ContentProviderActivity"
             android:label="ContentProvider" />
@@ -46,6 +56,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".fourconstitute.service.MyServer" />
     </application>
 
 </manifest>

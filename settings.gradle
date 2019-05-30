@@ -1,1 +1,2 @@
-include ':app', ':greendao', ':okhttp', ':server', ':baseandroid', ':statusbar', ':popupwindow'
+include ':baseandroid', ':binder', ':mqtt', ':ipc'
+//':app', ':greendao', ':okhttp', ':statusbar', ':popupwindow', ':contentprovidertest',

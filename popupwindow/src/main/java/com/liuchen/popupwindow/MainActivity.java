@@ -41,12 +41,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dimDrawable.setAlpha((int) (255.0F * 0.4));
                 mainLin.getOverlay().add(dimDrawable);*/
 
-                //Handler
-                View view = getWindow().getDecorView();
+                /*View view = getWindow().getDecorView();
                 Drawable dimDrawable1 = new ColorDrawable(Color.RED);
                 dimDrawable1.setBounds(0, 0, view.getWidth(), view.getHeight());
                 dimDrawable1.setAlpha((int) (255.0F));
-                view.getOverlay().add(dimDrawable1);
+                view.getOverlay().add(dimDrawable1);*/
 
                 /*ViewGroup parent = (ViewGroup) getWindow().getDecorView().getRootView();
                 Drawable dimDrawable2 = new ColorDrawable(Color.BLUE);
@@ -54,8 +53,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dimDrawable2.setAlpha((int) (255.0F * 0.4));
                 ViewGroupOverlay overlay = parent.getOverlay();
                 overlay.add(dimDrawable2);*/
-
-                startActivity(new Intent());
             }
         });
     }

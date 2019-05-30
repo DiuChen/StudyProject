@@ -4,14 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fourconstitute.contentprovider.ContentProviderActivity">
 
     <Button
         android:id="@+id/insertBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="插入数据"/>
+        android:text="插入数据" />
 
-    <
+    <Button
+        android:id="@+id/contactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取联系人" />
+
 
 </android.support.v7.widget.LinearLayoutCompat>
